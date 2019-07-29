@@ -28,10 +28,10 @@ $usuario->loadById(8);
 $usuario->update("professor", "!@#$%¨&*");
 echo $usuario;
 */
-    $usuario = new Usuario();
-    $usuario->loadById(7);
-    $usuario->delete();
-        echo $usuario;
+    die("passou por aqui");
+    $root = new Usuario(); 
+    $root->loadById(2);
+    echo $root; 
 
 
 ?>
