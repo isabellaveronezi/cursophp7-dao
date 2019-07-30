@@ -2,6 +2,9 @@
 
     require_once("config.php");
 
+    error_reporting(E_ALL);
+     ini_set('display_errors', 1);
+
 //Carrega um usuário
 //$root = new Usuario();
 //$root->loadbyId(3);
@@ -33,9 +36,11 @@ $usuario->loadById(8);
 $usuario->update("professor", "!@#$%¨&*");
 echo $usuario;
 */
-    die("passou por aqui");
+    
     $usuario = new Usuario();
-    $usuario->login("Isabella", "1234");
+    $usuario->login("Isabella", "78945");
     echo $usuario;
+
+    
 
 ?>
