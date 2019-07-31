@@ -17,10 +17,10 @@
 $search = Usuario::search("jo");
 echo json_encode($search);*/ 
 
-//carrega um usuário usando o login e a senha
-//$usuario = new Usuario();
-//$usuario->login("Isabella", "78945");
-//echo $usuario;
+/*carrega um usuário usando o login e a senha
+$usuario = new Usuario();
+$usuario->login("Isabella", "78945");
+echo $usuario;*/ 
 
 /*
 //Criando um novo usuário
@@ -38,7 +38,7 @@ echo $usuario;
     
    $aluno = new Usuario("aluno", "@aluno"); 
    $aluno->insert(); 
-   echo $aluno; 
+   echo $aluno;   
      
 
 ?>
