@@ -36,10 +36,14 @@ $usuario->update("professor", "!@#$%¨&*");
 echo $usuario;
 */
     
-   $usuario = new Usuario(); 
-   $usuario->loadById(6);
-   $usuario->update("professor", "!@#$");
-   echo $usuario; 
-     
+//Deleta um usuário
+
+    $usuario = new Usuario(); 
+
+    $usuario->loadById(6); 
+
+    $usuario->delete(); 
+
+    echo $usuario; 
 
 ?>
