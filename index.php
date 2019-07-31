@@ -1,5 +1,4 @@
 <?php 
-
     require_once("config.php");
 
     error_reporting(E_ALL);
@@ -14,13 +13,13 @@
 //$lista = Usuario::getList(); // chama direto porque é um método static
 //echo json_encode($lista);
 
-//Carrega uma lista de usuários buscando pelo login
-//$search = Usuario::search("jo");
-//echo json_encode($search);
+/*Carrega uma lista de usuários buscando pelo login
+$search = Usuario::search("jo");
+echo json_encode($search);*/ 
 
 //carrega um usuário usando o login e a senha
 //$usuario = new Usuario();
-//$usuario->login("Isabella", "1234");
+//$usuario->login("Isabella", "78945");
 //echo $usuario;
 
 /*
@@ -37,10 +36,9 @@ $usuario->update("professor", "!@#$%¨&*");
 echo $usuario;
 */
     
-    $usuario = new Usuario();
-    $usuario->login("Isabella", "78945");
-    echo $usuario;
-
-    
+   $aluno = new Usuario("aluno", "@aluno"); 
+   $aluno->insert(); 
+   echo $aluno; 
+     
 
 ?>
