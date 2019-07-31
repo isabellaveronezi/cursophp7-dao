@@ -31,14 +31,15 @@ echo $aluno;
 /*
 //Alterar um usuário
 $usuario = new Usuario();
-$usuario->loadById(8);
+$usuario->loadById(6);
 $usuario->update("professor", "!@#$%¨&*");
 echo $usuario;
 */
     
-   $aluno = new Usuario("aluno", "@aluno"); 
-   $aluno->insert(); 
-   echo $aluno;   
+   $usuario = new Usuario(); 
+   $usuario->loadById(6);
+   $usuario->update("professor", "!@#$");
+   echo $usuario; 
      
 
 ?>
