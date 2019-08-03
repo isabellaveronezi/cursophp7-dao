@@ -39,7 +39,7 @@ echo $usuario;
 //Deleta um usuário
 
 
-    die ("Kamila"); 
+    
     $usuario = new Usuario(); 
 
     $usuario->loadById(6); 
